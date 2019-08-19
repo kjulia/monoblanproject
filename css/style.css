@@ -1,10 +1,16 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/ProximaNova-Semibold.eot');
+  src: url('fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/ProximaNova-Semibold.woff') format('woff'),
+  url('fonts/ProximaNova-Semibold.ttf') format('truetype'),
+  url('fonts/ProximaNova-Semibold.svg#webfont') format('svg'); }
+
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 html {
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
-}
+  font-family: "Proxima Nova"; }
 body {
   margin: 0 auto;
   padding: 0 15px;
@@ -25,6 +31,7 @@ body {
 .header-logo {
   padding-left: 300px; }
 .header-menu {
+  font-family: "Proxima Nova";
   background-color: #fff; }
 .header-menu__list {
   padding: 0;
@@ -133,12 +140,11 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5); }
 .wrapper {
-  padding: auto;
   text-align: center; }
 .wrapperRow {
   display: flex;
   flex-wrap: wrap;
-  margin: 120px 21px 75px;}
+  margin: 120px 21px 75px; }
 .block {
   flex-grow: 1; 
   padding-right: 13px; }
@@ -159,28 +165,17 @@ footer {
 #forPhotosG {
   display: none; }     
 
-
 @media (max-width: 1024px) {
   .container {
-    flex-flow: wrap;
-  }
+    flex-flow: wrap; }
   .main {
     box-sizing: border-box;
     padding-right: 0;
-    width: calc(100% - 250px); 
-  }
-  .footer-top {
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap; }   
-}
+    width: calc(100% - 250px); } }
 @media (max-width: 960px) {
   .main {
     padding-left: 0;
-    width: 100%; 
-  }
-
-}                 
+    width: 100%; } }                 
 @media (max-width: 768px) {
   .header-logo {
     padding-left: 0 }
@@ -199,8 +194,7 @@ footer {
     margin-top: 30px;
     display: flex; }
   #registration-date {
-    display: none; }
-}
+    display: none; } }
 @media  (max-width: 640px) {
   .main {
     margin: 5px 0 0;
@@ -209,6 +203,4 @@ footer {
     margin: 0 0 5px;
     width: 100%; }
   .content-item img {
-    width: 100%; 
-  }
-}
+    width: 100%; } }

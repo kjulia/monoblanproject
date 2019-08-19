@@ -1,525 +1,522 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
-</head>
-<body>
-    <header class="header">
-        <div class="column">
-         <div class="header-logo">
-            <img src="img/logo.svg">
-        </div>
-    </div>
-    <div class="column">
-        <nav class="header-menu">
-            <div class="header-menu__btn">
-                <span></span>
-                <span></span>
-                <span></span>
-
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>monoblanproject</title>
+      <link rel="icon" href="img/logo.svg" type="image/x-icon"/>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+   </head>
+   <body>
+      <header class="header">
+         <div class="column">
+            <div class="header-logo">
+               <img src="img/logo.svg" alt="logo">
             </div>
-            <ul class="header-menu__list">
-                <li class="header-menu__item"><h1><b>monblanproject</b></h1></li>
-                <li id="registration-date" class="header-menu__item" data-original-title="#"><a href="#">Start on 17-02-2016</a></li>
-            </ul>         
-            <ul class="header-menu__list">
-                <li class="header-menu__item"><b>870</b> posts</li>
-                <li class="header-menu__item"><b>11,787</b> followers</li>
-                <li class="header-menu__item"><b>112</b> following</li>
-            </ul>
-            <ul class="header-menu__list">
-                <li class="header-menu__item">Date</li>
-                <li class="header-menu__item">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <div class="input-group date" id="datetimepicker1">
-                          <input type="text" class="form-control" />
-                          <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="header-menu__item">
-            <div class="col-lg-12">
-              <div class="form-group">
-                <div class="input-group date" id="datetimepicker2">
-                  <input type="text" class="form-control" />
-                  <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                </span>
-            </div>
-        </div>
-    </div>
-</li>
-</ul>
-</nav>
-</div>
-</header>
-<div class="container">
-    <div class="main">
-        <div class="content">
-            <div class="content__body">
-                <div class="content__row">
-                    <div class="content-item">
+         </div>
+         <div class="column">
+            <nav class="header-menu">
+               <div class="header-menu__btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <ul class="header-menu__list">
+                  <li class="header-menu__item">
+                     <h1><b>monblanproject</b></h1>
+                  </li>
+                  <li id="registration-date" class="header-menu__item" data-original-title="#"><a href="#">Start on 17-02-2016</a></li>
+               </ul>
+               <ul class="header-menu__list">
+                  <li class="header-menu__item"><b>870</b> posts</li>
+                  <li class="header-menu__item"><b>11,787</b> followers</li>
+                  <li class="header-menu__item"><b>112</b> following</li>
+               </ul>
+               <ul class="header-menu__list">
+                  <li class="header-menu__item">Date</li>
+                  <li class="header-menu__item">
+                     <div class="col-lg-12">
+                        <div class="form-group">
+                           <div class="input-group date" id="datetimepicker1">
+                              <input type="text" class="form-control" placeholder="from"/>
+                              <span class="input-group-addon">
+                              <span class="glyphicon glyphicon-calendar"></span>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="header-menu__item">
+                     <div class="col-lg-12">
+                        <div class="form-group">
+                           <div class="input-group date" id="datetimepicker2">
+                              <input type="text" class="form-control" placeholder="to"/>
+                              <span class="input-group-addon">
+                              <span class="glyphicon glyphicon-calendar"></span>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <div class="container">
+         <div class="main">
+            <div class="content">
+               <div class="content__body">
+                  <div class="content__row">
+                     <div class="content-item">
                         <div class="content-item__image">
-                            <a href="#">
-                                <img src="img/gallery/1.png" alt="pic1">
-                                <div class="content-item__excerpt">
-                                    <div class="wrapper">
-                                        <div class="wrapperRow">
-                                            <div class="block">
-                                                <div>
-                                                    <p>Today</p>
-                                                </div>
-                                            </div>
-                                            <div class="block">
-                                                <div>
-                                                    <p><input type="image" src="img/icons/ic_favorite.png" /> 128</p>
-                                                </div>
-                                            </div>
-                                            <div class="block">
-                                                <div>
-                                                    <p><input type="image" src="img/icons/ic_mode_comment.png" /> 31</p>
-                                                </div>
-                                            </div>
-                                            <div class="block">
-                                                <div>
-                                                   <p>9-08-16</p>
-                                               </div>
-                                           </div>
-                                           <div class="block">
-                                            <div>
-                                                <p><input type="image" src="img/icons/ic_favorite.png" /> 67</p>
-                                            </div>
-                                        </div>
-                                        <div class="block">
-                                            <div>
-                                                <p><input type="image" src="img/icons/ic_mode_comment.png" /> 22</p>
-                                            </div>
-                                        </div>
-                                        <div class="block">
-                                            <div>
-                                                <p>Image upload: 11-04-16</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                                
-                    </div>
-                </div>
-                <div class="content-item">
-                    <div class="content-item__image">
-                        <a href="#">
-                            <img src="img/gallery/2.png" alt="pic2">
-                            <div class="content-item__excerpt">
-                                <div class="wrapper">
+                           <a href="#">
+                              <img src="img/gallery/1.png" alt="pic1">
+                              <div class="content-item__excerpt">
+                                 <div class="wrapper">
                                     <div class="wrapperRow">
-                                        <div class="block">
-                                            <div>
-                                                <p>Today</p>
-                                            </div>
-                                        </div>
-                                        <div class="block">
-                                            <div>
-                                                <p><input type="image" src="img/icons/ic_favorite.png" /> 128</p>
-                                            </div>
-                                        </div>
-                                        <div class="block">
-                                            <div>
-                                                <p><input type="image" src="img/icons/ic_mode_comment.png" /> 31</p>
-                                            </div>
-                                        </div>
-                                        <div class="block">
-                                            <div>
-                                               <p>9-08-16</p>
-                                           </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Today</b></p>
+                                          </div>
                                        </div>
                                        <div class="block">
-                                        <div>
-                                            <p><input type="image" src="img/icons/ic_favorite.png" /> 67</p>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div>
-                                            <p><input type="image" src="img/icons/ic_mode_comment.png" /> 22</p>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div>
-                                            <p>Image upload: 11-04-16</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>                                
-                </div>
-            </div>
-            <div class="content-item">
-                <div class="content-item__image">
-                    <a href="#">
-                        <img src="img/gallery/3.png" alt="pic3">
-                        <div class="content-item__excerpt">
-                            <div class="wrapper">
-                                <div class="wrapperRow">
-                                    <div class="block">
-                                        <div>
-                                            <p>Today</p>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div>
-                                            <p><input type="image" src="img/icons/ic_favorite.png" /> 128</p>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div>
-                                            <p><input type="image" src="img/icons/ic_mode_comment.png" /> 31</p>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div>
-                                           <p>9-08-16</p>
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>128</b></p>
+                                          </div>
                                        </div>
-                                   </div>
-                                   <div class="block">
-                                    <div>
-                                        <p><input type="image" src="img/icons/ic_favorite.png" /> 67</p>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>31</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>9-08-16</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>67</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>22</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Image upload: 11-04-16</b></p>
+                                          </div>
+                                       </div>
                                     </div>
-                                </div>
-                                <div class="block">
-                                    <div>
-                                        <p><input type="image" src="img/icons/ic_mode_comment.png" /> 22</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="content-item">
+                        <div class="content-item__image">
+                           <a href="#">
+                              <img src="img/gallery/2.png" alt="pic2">
+                              <div class="content-item__excerpt">
+                                 <div class="wrapper">
+                                    <div class="wrapperRow">
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Today</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>128</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>31</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>9-08-16</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>67</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>22</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Image upload: 11-04-16</b></p>
+                                          </div>
+                                       </div>
                                     </div>
-                                </div>
-                                <div class="block">
-                                    <div>
-                                        <p>Image upload: 11-04-16</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="content-item">
+                        <div class="content-item__image">
+                           <a href="#">
+                              <img src="img/gallery/3.png" alt="pic3">
+                              <div class="content-item__excerpt">
+                                 <div class="wrapper">
+                                    <div class="wrapperRow">
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Today</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>128</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>31</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>9-08-16</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>67</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>22</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Image upload: 11-04-16</b></p>
+                                          </div>
+                                       </div>
                                     </div>
-                                </div>
-                            </div>
+                                 </div>
+                              </div>
+                           </a>
                         </div>
-                    </div>
-                </a>                                
-            </div>
-        </div>
-        <div class="content-item">
-            <div class="content-item__image">
-                <a href="#">
-                    <img src="img/gallery/4.png" alt="pic4">
-                    <div class="content-item__excerpt">
-                        <div class="wrapper">
-                            <div class="wrapperRow">
-                                <div class="block">
-                                    <div>
-                                        <p>Today</p>
+                     </div>
+                     <div class="content-item">
+                        <div class="content-item__image">
+                           <a href="#">
+                              <img src="img/gallery/4.png" alt="pic4">
+                              <div class="content-item__excerpt">
+                                 <div class="wrapper">
+                                    <div class="wrapperRow">
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Today</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>128</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>31</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>9-08-16</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>67</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>22</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Image upload: 11-04-16</b></p>
+                                          </div>
+                                       </div>
                                     </div>
-                                </div>
-                                <div class="block">
-                                    <div>
-                                        <p><input type="image" src="img/icons/ic_favorite.png" /> 128</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="content-item">
+                        <div class="content-item__image">
+                           <a href="#">
+                              <img src="img/gallery/5.png" alt="pic5">
+                              <div class="content-item__excerpt">
+                                 <div class="wrapper">
+                                    <div class="wrapperRow">
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Today</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>128</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>31</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>9-08-16</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>67</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>22</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Image upload: 11-04-16</b></p>
+                                          </div>
+                                       </div>
                                     </div>
-                                </div>
-                                <div class="block">
-                                    <div>
-                                        <p><input type="image" src="img/icons/ic_mode_comment.png" /> 31</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="content-item">
+                        <div class="content-item__image">
+                           <a href="#">
+                              <img src="img/gallery/6.png" alt="pic6">
+                              <div class="content-item__excerpt">
+                                 <div class="wrapper">
+                                    <div class="wrapperRow">
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Today</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>128</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>31</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>9-08-16</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>67</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>22</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Image upload: 11-04-16</b></p>
+                                          </div>
+                                       </div>
                                     </div>
-                                </div>
-                                <div class="block">
-                                    <div>
-                                       <p>9-08-16</p>
-                                   </div>
-                               </div>
-                               <div class="block">
-                                <div>
-                                    <p><input type="image" src="img/icons/ic_favorite.png" /> 67</p>
-                                </div>
-                            </div>
-                            <div class="block">
-                                <div>
-                                    <p><input type="image" src="img/icons/ic_mode_comment.png" /> 22</p>
-                                </div>
-                            </div>
-                            <div class="block">
-                                <div>
-                                    <p>Image upload: 11-04-16</p>
-                                </div>
-                            </div>
+                                 </div>
+                              </div>
+                           </a>
                         </div>
-                    </div>
-                </div>
-            </a>                                
-        </div>
-    </div>
-    <div class="content-item">
-        <div class="content-item__image">
-            <a href="#">
-                <img src="img/gallery/5.png" alt="pic5">
-                <div class="content-item__excerpt">
-                    <div class="wrapper">
-                        <div class="wrapperRow">
-                            <div class="block">
-                                <div>
-                                    <p>Today</p>
-                                </div>
-                            </div>
-                            <div class="block">
-                                <div>
-                                    <p><input type="image" src="img/icons/ic_favorite.png" /> 128</p>
-                                </div>
-                            </div>
-                            <div class="block">
-                                <div>
-                                    <p><input type="image" src="img/icons/ic_mode_comment.png" /> 31</p>
-                                </div>
-                            </div>
-                            <div class="block">
-                                <div>
-                                   <p>9-08-16</p>
-                               </div>
-                           </div>
-                           <div class="block">
-                            <div>
-                                <p><input type="image" src="img/icons/ic_favorite.png" /> 67</p>
-                            </div>
+                     </div>
+                     <div class="content-item">
+                        <div class="content-item__image">
+                           <a href="#">
+                              <img src="img/gallery/7.png" alt="pic7">
+                              <div class="content-item__excerpt">
+                                 <div class="wrapper">
+                                    <div class="wrapperRow">
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Today</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>128</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> 31</p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>9-08-16</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav" /> <b>67</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/> <b>22</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Image upload: 11-04-16</b></p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
                         </div>
-                        <div class="block">
-                            <div>
-                                <p><input type="image" src="img/icons/ic_mode_comment.png" /> 22</p>
-                            </div>
+                     </div>
+                     <div class="content-item">
+                        <div class="content-item__image">
+                           <a href="#">
+                              <img src="img/gallery/8.png" alt="pic8">
+                              <div class="content-item__excerpt">
+                                 <div class="wrapper">
+                                    <div class="wrapperRow">
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Today</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav"/> <b>128</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm"/><b> 31</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>9-08-16</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" alt="fav"/> <b>67</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" alt="comm" /> <b>22</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Image upload: 11-04-16</b></p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
                         </div>
-                        <div class="block">
-                            <div>
-                                <p>Image upload: 11-04-16</p>
-                            </div>
+                     </div>
+                     <div class="content-item">
+                        <div class="content-item__image">
+                           <a href="#">
+                              <img src="img/gallery/9.png" alt="pic9">
+                              <div class="content-item__excerpt">
+                                 <div class="wrapper">
+                                    <div class="wrapperRow">
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Today</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" /> <b>128</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" /> <b>31</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p>9-08-16</p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_favorite.png" /> <b>67</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><input type="image" src="img/icons/ic_mode_comment.png" /> <b>22</b></p>
+                                          </div>
+                                       </div>
+                                       <div class="block">
+                                          <div>
+                                             <p><b>Image upload: 11-04-16</b></p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </a>                                
-    </div>
-</div>
-<div class="content-item">
-    <div class="content-item__image">
-        <a href="#">
-            <img src="img/gallery/6.png" alt="pic6">
-            <div class="content-item__excerpt">
-                <div class="wrapper">
-                    <div class="wrapperRow">
-                        <div class="block">
-                            <div>
-                                <p>Today</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                                <p><input type="image" src="img/icons/ic_favorite.png" /> 128</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                                <p><input type="image" src="img/icons/ic_mode_comment.png" /> 31</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                               <p>9-08-16</p>
-                           </div>
-                       </div>
-                       <div class="block">
-                        <div>
-                            <p><input type="image" src="img/icons/ic_favorite.png" /> 67</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div>
-                            <p><input type="image" src="img/icons/ic_mode_comment.png" /> 22</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div>
-                            <p>Image upload: 11-04-16</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>                                
-</div>
-</div>
-<div class="content-item">
-    <div class="content-item__image">
-        <a href="#">
-            <img src="img/gallery/7.png" alt="pic7">
-            <div class="content-item__excerpt">
-                <div class="wrapper">
-                    <div class="wrapperRow">
-                        <div class="block">
-                            <div>
-                                <p>Today</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                                <p><input type="image" src="img/icons/ic_favorite.png" /> 128</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                                <p><input type="image" src="img/icons/ic_mode_comment.png" /> 31</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                               <p>9-08-16</p>
-                           </div>
-                       </div>
-                       <div class="block">
-                        <div>
-                            <p><input type="image" src="img/icons/ic_favorite.png" /> 67</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div>
-                            <p><input type="image" src="img/icons/ic_mode_comment.png" /> 22</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div>
-                            <p>Image upload: 11-04-16</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>                                
-</div>
-</div>
-<div class="content-item">
-    <div class="content-item__image">
-        <a href="#">
-            <img src="img/gallery/8.png" alt="pic8">
-            <div class="content-item__excerpt">
-                <div class="wrapper">
-                    <div class="wrapperRow">
-                        <div class="block">
-                            <div>
-                                <p>Today</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                                <p><input type="image" src="img/icons/ic_favorite.png" /> 128</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                                <p><input type="image" src="img/icons/ic_mode_comment.png" /> 31</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                               <p>9-08-16</p>
-                           </div>
-                       </div>
-                       <div class="block">
-                        <div>
-                            <p><input type="image" src="img/icons/ic_favorite.png" /> 67</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div>
-                            <p><input type="image" src="img/icons/ic_mode_comment.png" /> 22</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div>
-                            <p>Image upload: 11-04-16</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>                                
-</div>
-</div>
-<div class="content-item">
-    <div class="content-item__image">
-        <a href="#">
-            <img src="img/gallery/9.png" alt="pic9">
-            <div class="content-item__excerpt">
-                <div class="wrapper">
-                    <div class="wrapperRow">
-                        <div class="block">
-                            <div>
-                                <p>Today</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                                <p><input type="image" src="img/icons/ic_favorite.png" /> 128</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                                <p><input type="image" src="img/icons/ic_mode_comment.png" /> 31</p>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div>
-                               <p>9-08-16</p>
-                           </div>
-                       </div>
-                       <div class="block">
-                        <div>
-                            <p><input type="image" src="img/icons/ic_favorite.png" /> 67</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div>
-                            <p><input type="image" src="img/icons/ic_mode_comment.png" /> 22</p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div>
-                            <p>Image upload: 11-04-16</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>                                
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<footer>
-    <div id='show_more'>
-<p class="more_b">LOAD MORE</p>
-
-</div>
-<div id='forPhotosG'></div>
-</footer>
-<script src="js/script.js"></script>
-</body>
+         </div>
+      </div>
+      <footer>
+         <div id='show_more'>
+            <p class="more_b">LOAD MORE</p>
+         </div>
+         <div id='forPhotosG'></div>
+      </footer>
+      <script src="js/script.js"></script>
+   </body>
 </html>

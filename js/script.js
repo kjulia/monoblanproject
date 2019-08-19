@@ -6,7 +6,6 @@ $(document).ready(function(){
 });
 
 
-
    $(function () {
         $("#datetimepicker1").datetimepicker();
         $("#datetimepicker2").datetimepicker({
@@ -20,7 +19,7 @@ $(document).ready(function(){
         });
     });
 
-
+   
     $(document).ready(function () {
      var $forPhotosG = $('#forPhotosG'),
          $head_b = $('.more_b');
